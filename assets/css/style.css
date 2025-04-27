@@ -1,0 +1,77 @@
+/* Custom styles beyond Tailwind CSS */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slide-up {
+    animation: slideUp ease 0.8s;
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Hover effects */
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.03);
+}
+
+/* Card styles */
+.plant-card {
+    transition: all 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.recipe-card {
+    transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom focus styles */
+.custom-focus:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(62, 154, 78, 0.3);
+}
+
+/* Admin panel styles */
+.admin-sidebar {
+    transition: all 0.3s ease;
+}
+
+.admin-link {
+    transition: all 0.2s ease;
+}
+
+.admin-link:hover {
+    background-color: rgba(62, 154, 78, 0.1);
+}
+
+.admin-link.active {
+    background-color: rgba(62, 154, 78, 0.15);
+    border-left: 3px solid #3e9a4e;
+}
