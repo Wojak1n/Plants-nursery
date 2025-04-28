@@ -149,7 +149,7 @@ include 'includes/header.php';
                 <?php if (!empty($plant['image'])): ?>
                     <div class="mt-2 mb-4">
                         <p class="text-sm text-gray-500 mb-2">Current image:</p>
-                        <img src="<?= '/PFE-NEW/assets/images/plants/' . $plant['image'] ?>" 
+                        <img src="<?= '/plants-nursery/assets/images/plants/' . $plant['image'] ?>" 
                              alt="<?= htmlspecialchars($plant['name']) ?>" 
                              class="h-32 w-auto object-cover rounded-md">
                     </div>

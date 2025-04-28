@@ -113,7 +113,7 @@ include 'includes/header.php';
                             <tr>
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     <div class="h-12 w-12 rounded overflow-hidden bg-gray-100">
-                                    <img src="<?= !empty($plant['image']) ? '/PFE-NEW/assets/images/plants/' . $plant['image'] : 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg' ?>" 
+                                    <img src="<?= !empty($plant['image']) ? '/plants-nursery/assets/images/plants/' . $plant['image'] : 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg' ?>" 
      alt="<?= htmlspecialchars($plant['name']) ?>" 
      class="h-full w-full object-cover">
 

@@ -86,7 +86,7 @@ include 'includes/header.php';
             <?php foreach ($featuredPlants as $plant): ?>
                 <a href="plant.php?id=<?= $plant['id'] ?>" class="plant-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-56 relative">
-                        <img src="<?= !empty($plant['image']) ? '/PFE-NEW/assets/images/plants/' . $plant['image'] : 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg' ?>" 
+                        <img src="<?= !empty($plant['image']) ? '/plants-nursery/assets/images/plants/' . $plant['image'] : 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg' ?>" 
                              alt="<?= htmlspecialchars($plant['name']) ?>" 
                              class="w-full h-full object-cover">
                     </div>

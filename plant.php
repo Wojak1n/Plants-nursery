@@ -58,7 +58,7 @@ include 'includes/header.php';
         <div class="lg:grid lg:grid-cols-2 lg:gap-12">
             <div class="mb-8 lg:mb-0">
                 <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
-                    <img src="<?= !empty($plant['image']) ? '/PFE-NEW/assets/images/plants/' . $plant['image'] : 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg' ?>" 
+                    <img src="<?= !empty($plant['image']) ? '/Plants-nursery/assets/images/plants/' . $plant['image'] : 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg' ?>" 
                          alt="<?= htmlspecialchars($plant['name']) ?>" 
                          class="w-full h-96 object-cover">
                 </div>
