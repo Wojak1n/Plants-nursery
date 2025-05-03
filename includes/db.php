@@ -4,7 +4,7 @@ function connectDB() {
     $host = 'localhost';
     $dbname = 'plants_nursery';
     $username = 'root';
-    $password = '';
+    $password = 'root';
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
