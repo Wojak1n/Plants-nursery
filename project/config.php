@@ -1,9 +1,9 @@
 <?php
 // Database connection configuration
 $host = 'localhost';
-$dbname = 'login_system';
+$dbname = 'plants_nursery';
 $username = 'root';
-$password = '';
+$password = 'root';
 $charset = 'utf8mb4';
 
 // DSN (Data Source Name)

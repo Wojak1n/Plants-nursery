@@ -10,7 +10,7 @@ $success = '';
 
 // Check if user is already logged in
 if (isLoggedIn()) {
-    redirect('dashboard.php');
+    redirect('../index.php');
 }
 
 // Process login form submission
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($user) {
             // Create user session and redirect
             createUserSession($user);
-            redirect('dashboard.php');
+            redirect('../index.php');
         } else {
             $error = 'Invalid email or password';
         }
@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold text-primary-600 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                Secure Login
+                GREEN HEAVEN
             </h1>
             <p class="text-gray-600 mt-1">Enter your credentials to access your account</p>
         </div>
@@ -184,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         <!-- Footer -->
         <p class="mt-6 text-center text-sm text-gray-500">
-            &copy; 2025 Secure App. All rights reserved.
+            &copy; 2025 Secure App. All rights reserved to GREEN HEAVEN.
         </p>
     </div>
 </body>
