@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once '../includes/db.php';
 require_once 'functions.php';
 
 // Initialize variables
@@ -84,8 +84,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="w-full max-w-md">
         <!-- Header with Logo -->
         <div class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-primary-600 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <h1 class="text-3xl font-bold text-green-800 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" width="24" height="24" viewBox="0 0 512 512" <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#266333" d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5l88 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-16 0-72 0s0 0 0 0c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440l0 16c0 13.3 10.7 24 24 24s24-10.7 24-24l0-16c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z"/></svg>
                 GREEN HEAVEN
             </h1>
             <p class="text-gray-600 mt-1">Enter your credentials to access your account</p>
@@ -149,14 +149,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             id="remember-me"
                             name="remember-me"
                             type="checkbox"
-                            class="h-4 w-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                            class="h-4 w-4 text-green-800 border-green-800 rounded focus:ring-green-800"
                         >
                         <label for="remember-me" class="ml-2 block text-sm text-gray-700">
                             Remember me
                         </label>
                     </div>
                     <div class="text-sm">
-                        <a href="#" class="font-medium text-primary-600 hover:text-primary-500 transition-colors">
+                        <a href="#" class="font-medium text-green-800 hover:text-green-600 transition-colors">
                             Forgot password?
                         </a>
                     </div>
@@ -166,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="mb-6">
                     <button 
                         type="submit" 
-                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200"
+                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-800 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200"
                     >
                         Sign in
                     </button>
@@ -175,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- Register Link -->
                 <p class="text-center text-sm text-gray-600">
                     Don't have an account?
-                    <a href="#" class="font-medium text-primary-600 hover:text-primary-500 transition-colors">
+                    <a href="#" class="font-medium text-green-800 hover:text-green-600 transition-colors">
                         Create one now
                     </a>
                 </p>
