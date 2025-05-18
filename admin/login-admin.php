@@ -3,7 +3,7 @@ require_once '../includes/functions.php';
 
 // Check if already logged in
 if (isLoggedIn()) {
-    header('Location: dashboard.php');
+    header('Location: /dashboard.php');
     exit;
 }
 

@@ -148,7 +148,7 @@ function isLoggedIn() {
 // Redirect if not logged in
 function requireLogin() {
     if (!isLoggedIn()) {
-        header("Location: login.php");
+        header("Location: login-admin.php");
         exit;
     }
 }
