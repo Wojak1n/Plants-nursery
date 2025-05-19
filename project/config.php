@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'plants_nursery';
 $username = 'root';
-$password = 'root';
+$password = '';
 $charset = 'utf8mb4';
 
 // DSN (Data Source Name)
