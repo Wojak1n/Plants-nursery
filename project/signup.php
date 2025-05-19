@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/functions.php';
+require_once '../includes/functions.php';
 
 // Initialize variables
 $name = '';
@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // Include header
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 <div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
@@ -152,5 +152,3 @@ include 'includes/header.php';
         </div>
     </div>
 </div>
-
-<?php include 'includes/footer.php'; ?>
