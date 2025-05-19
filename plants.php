@@ -57,10 +57,10 @@ include 'includes/header.php';
                 <?php foreach ($plants as $plant): ?>
                     <a href="plant.php?id=<?= $plant['id'] ?>" class="plant-card bg-white rounded-lg shadow-md overflow-hidden">
                         <div class="h-56 relative">
-                            <img src="<?= !empty($plant['image']) ? './assets/images/plants/' . $plant['image'] : 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg' ?>" 
-                                 alt="<?= htmlspecialchars($plant['name']) ?>" 
+                        <img src="<?= !empty($plant['image']) ? './assets/images/plants/' . $plant['image'] : 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg' ?>" 
+                            alt="<?= htmlspecialchars($plant['name']) ?>" 
                                  class="w-full h-full object-cover">
-                        </div>
+                    </div>
                         <div class="p-6">
                             <h2 class="text-xl font-bold text-gray-900 mb-1"><?= htmlspecialchars($plant['name']) ?></h2>
                             <p class="text-sm text-gray-500 italic mb-3"><?= htmlspecialchars($plant['scientific_name']) ?></p>
