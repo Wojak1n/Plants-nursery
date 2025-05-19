@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 if(isLoggedIn()){
     header("location: dashboard.php");
 }else{
-    header("location: login.php");
+    header("location: login-admin.php");
 
 }
 ?>

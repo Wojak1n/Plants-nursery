@@ -125,7 +125,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                         <!-- Mobile menu -->
                         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md rounded-md overflow-hidden mb-6">
                             <div class="px-2 pt-2 pb-3 space-y-1">
-                                <a href="/admin/dashboard.php" class="<?= $currentPage === 'dashboard.php' ? 'bg-primary-50 text-primary-800' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' ?> block px-3 py-2 rounded-md text-base font-medium">
+                                <a href="./admin/dashboard.php" class="<?= $currentPage === 'dashboard.php' ? 'bg-primary-50 text-primary-800' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' ?> block px-3 py-2 rounded-md text-base font-medium">
                                     Dashboard
                                 </a>
                                 <a href="/admin/plants.php" class="<?= $currentPage === 'plants.php' || $currentPage === 'add_plant.php' || $currentPage === 'edit_plant.php' ? 'bg-primary-50 text-primary-800' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' ?> block px-3 py-2 rounded-md text-base font-medium">
@@ -134,7 +134,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                                 <a href="/admin/recipes.php" class="<?= $currentPage === 'recipes.php' || $currentPage === 'add_recipe.php' || $currentPage === 'edit_recipe.php' ? 'bg-primary-50 text-primary-800' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' ?> block px-3 py-2 rounded-md text-base font-medium">
                                     Manage Recipes
                                 </a>
-                                <a href="/" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
+                                <a href="../index.php" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
                                     View Website
                                 </a>
                                 <a href="/admin/logout.php" class="text-red-600 hover:bg-red-50 hover:text-red-900 block px-3 py-2 rounded-md text-base font-medium">

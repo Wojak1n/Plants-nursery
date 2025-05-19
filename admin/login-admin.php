@@ -3,7 +3,7 @@ require_once '../includes/functions.php';
 
 // Check if already logged in
 if (isLoggedIn()) {
-    header('Location: /dashboard.php');
+    header('Location: dashboard.php');
     exit;
 }
 
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // In a real application, you would check against a database
     // For this demo, we use a hardcoded admin user
     $adminUsername = 'admin';
-    $adminPasswordHash = password_hash('admin123', PASSWORD_DEFAULT); // In real app, this would be stored in database
+    $adminPasswordHash = password_hash('admin', PASSWORD_DEFAULT); // In real app, this would be stored in database
     
     if ($username === $adminUsername && password_verify($password, $adminPasswordHash)) {
         if (session_status() === PHP_SESSION_NONE) {
@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         <?php endif; ?>
         
-        <form action="login.php" method="POST">
+        <form action="login-admin.php" method="POST">
             <div class="mb-6">
                 <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
                 <input type="text" id="username" name="username" 
@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="mt-6 text-center text-sm text-gray-600">
             <p>For demo purposes, use:</p>
             <p>Username: <span class="font-medium">admin</span></p>
-            <p>Password: <span class="font-medium">admin123</span></p>
+            <p>Password: <span class="font-medium">admin</span></p>
         </div>
         
         <div class="mt-8 text-center">

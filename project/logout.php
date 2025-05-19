@@ -10,6 +10,6 @@ if (session_status() === PHP_SESSION_ACTIVE) {
 }
 
 // Redirect to login page
-header('Location: index.php');
+header('Location: ./index.php');
 exit;
 ?>
