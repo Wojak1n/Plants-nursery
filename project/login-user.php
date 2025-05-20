@@ -175,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- Register Link -->
                 <p class="text-center text-sm text-gray-600">
                     Don't have an account?
-                    <a href="#" class="font-medium text-green-800 hover:text-green-600 transition-colors">
+                    <a href="signup.php" class="font-medium text-green-800 hover:text-green-600 transition-colors">
                         Create one now
                     </a>
                 </p>
