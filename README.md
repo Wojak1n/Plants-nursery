@@ -28,7 +28,7 @@ A professional website for a plant nursery featuring a collection of plants and 
 - URL: `/admin/login.php`
 - Default credentials:
   - Username: admin
-  - Password: admin123
+  - Password: admin
 
 ## Project Structure
 
