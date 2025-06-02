@@ -74,9 +74,58 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // Include header
-include '../includes/header.php';
-?>
 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Haven Nursery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9f1',
+                            100: '#dcf1df',
+                            200: '#bae3c1',
+                            300: '#8ecf9a',
+                            400: '#5fb56e',
+                            500: '#3e9a4e',
+                            600: '#2d7b3c',
+                            700: '#266333',
+                            800: '#224f2c',
+                            900: '#1e4226',
+                            950: '#0f2514',
+                        },
+                        accent: {
+                            50: '#f7f8f8',
+                            100: '#eef0f2',
+                            200: '#e0e5e7',
+                            300: '#c9d2d7',
+                            400: '#a3b3bc',
+                            500: '#8295a1',
+                            600: '#6b7c89',
+                            700: '#59666f',
+                            800: '#4c565d',
+                            900: '#434a50',
+                            950: '#25292e',
+                        }
+                    },
+                },
+                fontFamily: {
+                    'sans': ['Poppins', 'sans-serif'],
+                    'serif': ['Merriweather', 'serif'],
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
 <div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h1 class="text-3xl font-bold text-center text-gray-900 mb-8">Create an Account</h1>
