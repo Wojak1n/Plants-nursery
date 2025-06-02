@@ -155,7 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                     <div class="mt-1">
-                        <input id="name" name="name" type="text" value="<?= htmlspecialchars($name) ?>" required 
+                        <input id="name" name="name" type="text" value="<?= htmlspecialchars($name) ?>" required placeholder="Enter your Name"
                                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm">
                     </div>
                 </div>
@@ -163,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
                     <div class="mt-1">
-                        <input id="email" name="email" type="email" value="<?= htmlspecialchars($email) ?>" required 
+                        <input id="email" name="email" type="email" value="<?= htmlspecialchars($email) ?>" required placeholder="your@gmail.com"
                                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm">
                     </div>
                 </div>
@@ -171,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div>
                     <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
                     <div class="mt-1">
-                        <input id="password" name="password" type="password" required 
+                        <input id="password" name="password" type="password" required placeholder="6 Characters required"
                                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm">
                     </div>
                 </div>
