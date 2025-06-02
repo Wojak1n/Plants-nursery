@@ -193,7 +193,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <span class="px-2 bg-white text-gray-500">Already have an account?</span>
                     </div>
                 </div>
-
                 <div class="mt-6 text-center">
                     <a href="login-user.php" class="font-medium text-primary-600 hover:text-primary-500">
                         Sign in instead
