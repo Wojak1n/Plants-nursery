@@ -5,11 +5,11 @@ require_once '../includes/functions.php';
 requireLogin();
 
 // Include admin header
-include '../includes/header.php';
+include './includes/header.php';
 ?>
 
 <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-    <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
+ <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-primary-50 p-6 rounded-lg">
