@@ -124,7 +124,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 </a>
                 <?php if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in']): ?>
                     <a href="/admin/dashboard.php" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-primary-600 hover:bg-gray-50 hover:border-gray-300">
-                        Admin Panel
+                    Admin Panel
                     </a>
                 <?php endif; ?>
             </div>
