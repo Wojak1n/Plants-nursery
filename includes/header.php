@@ -87,12 +87,12 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                         </a>
                     <?php endif; ?>
                     <?php if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']): ?>
-                        <a href="./project/login-user.php" class="px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors">
+                        <a href="./Login/login-user.php" class="px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors">
                             login
                         </a>
                     <?php endif; ?>
                     <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']): ?>
-                        <a href="./project/logout.php" class="px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors">
+                        <a href="./Login/logout.php" class="px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors">
                             logout
                         </a>
                     <?php endif; ?>
