@@ -171,8 +171,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Sign in
                     </button>
                 </div>
-                
-                <!-- Register Link -->
+                <div class="mt-2 mb-4 text-center">
+            <a href="../index.php" class="text-green-800 hover:text-green-600 font-medium">Back to Website</a>
+        </div>
+        
+        <!-- Register Link -->
                 <p class="text-center text-sm text-gray-600">
                     Don't have an account?
                     <a href="signup.php" class="font-medium text-green-800 hover:text-green-600 transition-colors">
