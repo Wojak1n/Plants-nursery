@@ -13,7 +13,6 @@ if (!empty($searchTerm)) {
 } else {
     $plants = getAllPlants();
 }
-
 // Handle plant deletion
 if (isset($_POST['delete_plant']) && isset($_POST['plant_id'])) {
     $plantId = (int)$_POST['plant_id'];

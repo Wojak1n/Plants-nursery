@@ -10,7 +10,6 @@ if (!empty($searchTerm)) {
 } else {
     $recipes = getAllRecipes();
 }
-
 // Include header
 include 'includes/header.php';
 ?>

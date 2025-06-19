@@ -6,7 +6,6 @@ require_once 'functions.php';
 if (!isLoggedIn()) {
     redirect('index.php');
 }
-
 // Get user information
 $user_id = $_SESSION['user_id'];
 $user_email = $_SESSION['user_email'];

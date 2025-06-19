@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = isset($_POST['name']) ? sanitizeInput($_POST['name']) : '';
     $scientificName = isset($_POST['scientific_name']) ? sanitizeInput($_POST['scientific_name']) : '';
     $description = isset($_POST['description']) ? sanitizeInput($_POST['description']) : '';
-    
     // Validate inputs
     $errors = [];
     

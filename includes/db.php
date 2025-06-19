@@ -5,7 +5,6 @@ function connectDB() {
     $dbname = 'plants_nursery';
     $username = 'root';
     $password = '';
-    
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
         // Set PDO to throw exceptions on error

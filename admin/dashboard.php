@@ -3,7 +3,6 @@ require_once '../includes/functions.php';
 
 // Require login
 requireLogin();
-
 // Include admin header
 include './includes/header.php';
 ?>

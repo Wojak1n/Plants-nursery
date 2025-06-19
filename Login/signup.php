@@ -187,7 +187,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                        <div class="mt-8 mb-2 text-center">
             <a href="../index.php" class="text-green-800 hover:text-green-600 font-medium">Back to Website</a>
         </div>
-
             <div class="mt-6">
                 <div class="relative">
                     <div class="absolute inset-0 flex items-center">

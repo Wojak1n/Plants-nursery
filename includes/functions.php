@@ -26,7 +26,6 @@ function getFeaturedPlants($limit = 6) {
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
-
 // Get a single plant by ID
 function getPlantById($id) {
     $pdo = connectDB();

@@ -13,7 +13,6 @@ if (!empty($searchTerm)) {
 } else {
     $recipes = getAllRecipes();
 }
-
 // Handle recipe deletion
 if (isset($_POST['delete_recipe']) && isset($_POST['recipe_id'])) {
     $recipeId = (int)$_POST['recipe_id'];

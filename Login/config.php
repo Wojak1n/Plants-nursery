@@ -5,7 +5,6 @@ $dbname = 'plants_nursery';
 $username = 'root';
 $password = '';
 $charset = 'utf8mb4';
-
 // DSN (Data Source Name)
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 

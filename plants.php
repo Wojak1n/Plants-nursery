@@ -3,7 +3,6 @@ require_once 'includes/functions.php';
 
 // Check if search is being performed
 $searchTerm = isset($_GET['search']) ? sanitizeInput($_GET['search']) : '';
-
 // Get plants based on search or get all
 if (!empty($searchTerm)) {
     $plants = searchPlants($searchTerm);

@@ -65,7 +65,6 @@
                 mobileMenu.classList.toggle('hidden');
             });
         }
-
         // Add any additional JavaScript here
     </script>
 </body>

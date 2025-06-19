@@ -9,7 +9,6 @@ if ($recipeId <= 0) {
     header('Location: recipes.php');
     exit;
 }
-
 // Get recipe details
 $recipe = getRecipeById($recipeId);
 

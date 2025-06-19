@@ -3,7 +3,6 @@ require_once '../includes/functions.php';
 
 // Require login
 requireLogin();
-
 // Get plant ID from URL
 $plantId = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 

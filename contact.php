@@ -11,7 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = isset($_POST['email']) ? sanitizeInput($_POST['email']) : '';
     $subject = isset($_POST['subject']) ? sanitizeInput($_POST['subject']) : '';
     $messageContent = isset($_POST['message']) ? sanitizeInput($_POST['message']) : '';
-    
     // Validate inputs
     $errors = [];
     

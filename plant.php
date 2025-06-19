@@ -3,7 +3,6 @@ require_once 'includes/functions.php';
 
 // Get plant ID from URL
 $plantId = isset($_GET['id']) ? (int)$_GET['id'] : 0;
-
 // If no ID provided, redirect to plants page
 if ($plantId <= 0) {
     header('Location: plants.php');

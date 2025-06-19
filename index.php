@@ -3,7 +3,6 @@ require_once 'includes/functions.php';
 
 // Get featured plants
 $featuredPlants = getFeaturedPlants(6);
-
 // Include header
 include 'includes/header.php';
 ?>

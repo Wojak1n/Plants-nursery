@@ -10,7 +10,6 @@ require_once 'config.php';
  */
 function authenticateUser($email, $password) {
     global $pdo;
-    
     try {
         $stmt = $pdo->prepare('SELECT * FROM users WHERE email = :email LIMIT 1');
         $stmt->execute(['email' => $email]);

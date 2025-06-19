@@ -110,7 +110,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>Username: <span class="font-medium">admin</span></p>
             <p>Password: <span class="font-medium">admin</span></p>
         </div>
-        
         <div class="mt-8 text-center">
             <a href="/" class="text-primary-600 hover:text-primary-700 font-medium">Back to Website</a>
         </div>

@@ -12,7 +12,6 @@ if (empty($plants)) {
     header('Location: plants.php?message=You need to add at least one plant before adding recipes.');
     exit;
 }
-
 $message = '';
 $messageType = '';
 

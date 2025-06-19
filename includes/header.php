@@ -2,7 +2,6 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-
 // Define the current page for active navigation highlighting
 $currentPage = basename($_SERVER['PHP_SELF']);
 ?>

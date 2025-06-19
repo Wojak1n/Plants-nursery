@@ -6,7 +6,6 @@ requireLogin();
 
 // Get recipe ID from URL
 $recipeId = isset($_GET['id']) ? (int)$_GET['id'] : 0;
-
 // If no ID provided, redirect to recipes page
 if ($recipeId <= 0) {
     header('Location: recipes.php');

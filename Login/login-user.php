@@ -161,7 +161,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </a>
                     </div>
                 </div>
-                
                 <!-- Login Button -->
                 <div class="mb-6">
                     <button 
