@@ -1,0 +1,77 @@
+# Plants Nursery - Apache Configuration
+
+# Enable URL Rewriting
+RewriteEngine On
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Hide sensitive files
+<Files "*.sql">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "config*.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "deploy.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Prevent access to sensitive directories
+RedirectMatch 403 ^/\.git
+RedirectMatch 403 ^/\.env
+RedirectMatch 403 ^/composer\.(json|lock)
+RedirectMatch 403 ^/package\.(json|lock)
+
+# Custom Error Pages
+ErrorDocument 404 /error_pages/404.php
+ErrorDocument 500 /error_pages/500.php
+
+# Enable Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# PHP Settings
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+    php_value max_execution_time 300
+    php_value max_input_vars 3000
+</IfModule>
+
+# Friendly URLs (Optional - uncomment if you want clean URLs)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^plant/([0-9]+)/?$ plant.php?id=$1 [L,QSA]
+# RewriteRule ^recipe/([0-9]+)/?$ recipe.php?id=$1 [L,QSA]

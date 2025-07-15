@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/test.php": {
+      "runtime": "vercel-php@0.5.2"
+    }
+  }
+}

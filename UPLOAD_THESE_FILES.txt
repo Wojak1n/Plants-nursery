@@ -1,0 +1,47 @@
+📁 PLANTS NURSERY - FILES TO UPLOAD TO YOUR HOSTING SERVER
+
+✅ UPLOAD THESE FILES AND FOLDERS:
+
+📄 Root Files:
+- index.php
+- index.html
+- plants.php
+- recipes.php
+- contact.php
+- plant.php
+- recipe.php
+- .htaccess
+- robots.txt
+- database_setup.sql
+- deploy.php
+- check_requirements.php
+
+📁 Folders to Upload:
+- Login/ (entire folder)
+- admin/ (entire folder)
+- includes/ (entire folder)
+- assets/ (entire folder)
+- error_pages/ (entire folder)
+- api/ (entire folder)
+- supabase/ (entire folder)
+
+❌ DO NOT UPLOAD THESE FILES (keep them local):
+- README.md
+- DEPLOYMENT_GUIDE.md
+- DEPLOYMENT_CHECKLIST.md
+- UPLOAD_THESE_FILES.txt
+- config_production.php (this is just a template)
+- includes/db_production.php (this is just a template)
+
+🔧 AFTER UPLOADING:
+1. Visit: yoursite.com/check_requirements.php
+2. Visit: yoursite.com/deploy.php
+3. Enter your database details
+4. Test your website
+5. Delete deploy.php and check_requirements.php
+
+🔐 DEFAULT LOGINS:
+User: test@example.com / password123
+Admin: admin / admin
+
+⚠️ CHANGE THESE PASSWORDS IMMEDIATELY AFTER DEPLOYMENT!

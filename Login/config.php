@@ -1,9 +1,9 @@
 <?php
-// Database connection configuration
+// Hostinger database connection configuration
 $host = 'localhost';
-$dbname = 'plants_nursery';
-$username = 'root';
-$password = '';
+$dbname = 'u629842120_plants_nursery';
+$username = 'u629842120_root';
+$password = '7KwgWvruIp#';
 $charset = 'utf8mb4';
 // DSN (Data Source Name)
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";

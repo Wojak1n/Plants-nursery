@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive areas
+Disallow: /admin/
+Disallow: /Login/
+Disallow: /includes/
+Disallow: /api/
+Disallow: /error_pages/
+Disallow: /*.sql$
+Disallow: /deploy.php
+Disallow: /config*.php
+
+# Allow important pages
+Allow: /index.php
+Allow: /plants.php
+Allow: /recipes.php
+Allow: /contact.php
+Allow: /plant.php
+Allow: /recipe.php
+Allow: /assets/
+
+# Sitemap (create this later if needed)
+# Sitemap: https://yourdomain.com/sitemap.xml
